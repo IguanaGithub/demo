@@ -1,0 +1,25 @@
+<channel
+   name="05 - Web Services Client"
+   guid="316EC18785CADD9A2783939853EC1D81"
+   description="Parse some famous web site"
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_channel>
+   </to_channel>
+   <from_mapper
+      guid="05_-_Web_Services_Client-From-jhle1KLaFe4wwE"
+      commit_id="760a15dcf9e1dc7ab0c0f18497bb4b28e55fc2be"
+      commit_comment="Commit"
+      poll_time="10000">
+   </from_mapper>
+   <message_filter
+      filter_after_logging="false"
+      log_pre_post_filter_message="true"
+      filter_vmd_path=""
+      transformation_mode="0"
+      scripted_transformation_configuration_name="default"
+      error_handling="0"
+      use_translator_filter="true">
+   </message_filter>
+</channel>
