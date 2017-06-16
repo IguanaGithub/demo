@@ -146,9 +146,9 @@
             </table_grammar>
          </table_grammar>
       </message>
-      <message name="Message1">
-         <description></description>
-         <table_grammar name="Message1">
+      <message name="ORM">
+         <description>Order Message (also Rde, Rds, Rgv, Ras)</description>
+         <table_grammar name="ORM">
             <type>group</type>
          </table_grammar>
       </message>
@@ -11588,11 +11588,1850 @@
          <description></description>
          <has_delimiters>True</has_delimiters>
       </segment>
+      <segment id="43">
+         <name>PID</name>
+         <description>Patient identification</description>
+         <has_delimiters>True</has_delimiters>
+         <field>
+            <name>Set ID - PID</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>SI</composite_ref>
+         </field>
+         <field>
+            <name>Patient ID</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CX</composite_ref>
+         </field>
+         <field>
+            <name>Patient Identifier List</name>
+            <max_repeats>0</max_repeats>
+            <is_required>True</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CX</composite_ref>
+         </field>
+         <field>
+            <name>Alternate Patient ID - PID</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CX</composite_ref>
+         </field>
+         <field>
+            <name>Patient Name</name>
+            <max_repeats>0</max_repeats>
+            <is_required>True</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>XPN</composite_ref>
+         </field>
+         <field>
+            <name>Mother&apos;s Maiden Name</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>XPN</composite_ref>
+         </field>
+         <field>
+            <name>Date/Time Of Birth</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>TS</composite_ref>
+         </field>
+         <field>
+            <name>Administrative Sex</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Patient Alias</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>XPN</composite_ref>
+         </field>
+         <field>
+            <name>Race</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Patient Address</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>XAD</composite_ref>
+         </field>
+         <field>
+            <name>County Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Phone Number - Home</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>XTN</composite_ref>
+         </field>
+         <field>
+            <name>Phone Number - Business</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>XTN</composite_ref>
+         </field>
+         <field>
+            <name>Primary Language</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Marital Status</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Religion</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Patient Account Number</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CX</composite_ref>
+         </field>
+         <field>
+            <name>SSN Number - Patient</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Driver&apos;s License Number - Patient</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>DLN</composite_ref>
+         </field>
+         <field>
+            <name>Mother&apos;s Identifier</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CX</composite_ref>
+         </field>
+         <field>
+            <name>Ethnic Group</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Birth Place</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Multiple Birth Indicator</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ID</composite_ref>
+         </field>
+         <field>
+            <name>Birth Order</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>NM</composite_ref>
+         </field>
+         <field>
+            <name>Citizenship</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Veterans Military Status</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Nationality</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Patient Death Date and Time</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>TS</composite_ref>
+         </field>
+         <field>
+            <name>Patient Death Indicator</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ID</composite_ref>
+         </field>
+         <field>
+            <name>Identity Unknown Indicator</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ID</composite_ref>
+         </field>
+         <field>
+            <name>Identity Reliability Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Last Update Date/Time</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>TS</composite_ref>
+         </field>
+         <field>
+            <name>Last Update Facility</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>HD</composite_ref>
+         </field>
+         <field>
+            <name>Species Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Breed Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Strain</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Production Class Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+      </segment>
+      <segment id="44">
+         <name>PD1</name>
+         <description>patient additional demographic</description>
+         <has_delimiters>True</has_delimiters>
+         <field>
+            <name>Living Dependency</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Living Arrangement</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Patient Primary Facility</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>XON</composite_ref>
+         </field>
+         <field>
+            <name>Patient Primary Care Provider Name &amp; ID No.</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>XCN</composite_ref>
+         </field>
+         <field>
+            <name>Student Indicator</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Handicap</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Living Will Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Organ Donor Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Separate Bill</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ID</composite_ref>
+         </field>
+         <field>
+            <name>Duplicate Patient</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CX</composite_ref>
+         </field>
+         <field>
+            <name>Publicity Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Protection Indicator</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ID</composite_ref>
+         </field>
+         <field>
+            <name>Protection Indicator Effective Date</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>DT</composite_ref>
+         </field>
+         <field>
+            <name>Place of Worship</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>XON</composite_ref>
+         </field>
+         <field>
+            <name>Advance Directive Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Immunization Registry Status</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Immunization Registry Status Effective Date</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>DT</composite_ref>
+         </field>
+         <field>
+            <name>Publicity Code Effective Date</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>DT</composite_ref>
+         </field>
+         <field>
+            <name>Military Branch</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Military Rank/Grade</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Military Status</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+      </segment>
+      <segment id="45">
+         <name>PV1</name>
+         <description>Patient visit</description>
+         <has_delimiters>True</has_delimiters>
+         <field>
+            <name>Set ID - PV1</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>SI</composite_ref>
+         </field>
+         <field>
+            <name>Patient Class</name>
+            <max_repeats>0</max_repeats>
+            <is_required>True</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Assigned Patient Location</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>PL</composite_ref>
+         </field>
+         <field>
+            <name>Admission Type</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Preadmit Number</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CX</composite_ref>
+         </field>
+         <field>
+            <name>Prior Patient Location</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>PL</composite_ref>
+         </field>
+         <field>
+            <name>Attending Doctor</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>XCN</composite_ref>
+         </field>
+         <field>
+            <name>Referring Doctor</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>XCN</composite_ref>
+         </field>
+         <field>
+            <name>Consulting Doctor</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>XCN</composite_ref>
+         </field>
+         <field>
+            <name>Hospital Service</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Temporary Location</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>PL</composite_ref>
+         </field>
+         <field>
+            <name>Preadmit Test Indicator</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Re-admission Indicator</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Admit Source</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Ambulatory Status</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>VIP Indicator</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Admitting Doctor</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>XCN</composite_ref>
+         </field>
+         <field>
+            <name>Patient Type</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Visit Number</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CX</composite_ref>
+         </field>
+         <field>
+            <name>Financial Class</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>FC</composite_ref>
+         </field>
+         <field>
+            <name>Charge Price Indicator</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Courtesy Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Credit Rating</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Contract Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Contract Effective Date</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>DT</composite_ref>
+         </field>
+         <field>
+            <name>Contract Amount</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>NM</composite_ref>
+         </field>
+         <field>
+            <name>Contract Period</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>NM</composite_ref>
+         </field>
+         <field>
+            <name>Interest Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Transfer to Bad Debt Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Transfer to Bad Debt Date</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>DT</composite_ref>
+         </field>
+         <field>
+            <name>Bad Debt Agency Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Bad Debt Transfer Amount</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>NM</composite_ref>
+         </field>
+         <field>
+            <name>Bad Debt Recovery Amount</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>NM</composite_ref>
+         </field>
+         <field>
+            <name>Delete Account Indicator</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Delete Account Date</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>DT</composite_ref>
+         </field>
+         <field>
+            <name>Discharge Disposition</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Discharged to Location</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>DLD</composite_ref>
+         </field>
+         <field>
+            <name>Diet Type</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Servicing Facility</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Bed Status</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Account Status</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Pending Location</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>PL</composite_ref>
+         </field>
+         <field>
+            <name>Prior Temporary Location</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>PL</composite_ref>
+         </field>
+         <field>
+            <name>Admit Date/Time</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>TS</composite_ref>
+         </field>
+         <field>
+            <name>Discharge Date/Time</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>TS</composite_ref>
+         </field>
+         <field>
+            <name>Current Patient Balance</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>NM</composite_ref>
+         </field>
+         <field>
+            <name>Total Charges</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>NM</composite_ref>
+         </field>
+         <field>
+            <name>Total Adjustments</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>NM</composite_ref>
+         </field>
+         <field>
+            <name>Total Payments</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>NM</composite_ref>
+         </field>
+         <field>
+            <name>Alternate Visit ID</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CX</composite_ref>
+         </field>
+         <field>
+            <name>Visit Indicator</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Other Healthcare Provider</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>XCN</composite_ref>
+         </field>
+      </segment>
+      <segment id="46">
+         <name>PV2</name>
+         <description>Patient visit - additional information</description>
+         <has_delimiters>True</has_delimiters>
+         <field>
+            <name>Prior Pending Location</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>PL</composite_ref>
+         </field>
+         <field>
+            <name>Accommodation Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Admit Reason</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Transfer Reason</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Patient Valuables</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Patient Valuables Location</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Visit User Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Expected Admit Date/Time</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>TS</composite_ref>
+         </field>
+         <field>
+            <name>Expected Discharge Date/Time</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>TS</composite_ref>
+         </field>
+         <field>
+            <name>Estimated Length of Inpatient Stay</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>NM</composite_ref>
+         </field>
+         <field>
+            <name>Actual Length of Inpatient Stay</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>NM</composite_ref>
+         </field>
+         <field>
+            <name>Visit Description</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Referral Source Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>XCN</composite_ref>
+         </field>
+         <field>
+            <name>Previous Service Date</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>DT</composite_ref>
+         </field>
+         <field>
+            <name>Employment Illness Related Indicator</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ID</composite_ref>
+         </field>
+         <field>
+            <name>Purge Status Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Purge Status Date</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>DT</composite_ref>
+         </field>
+         <field>
+            <name>Special Program Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Retention Indicator</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ID</composite_ref>
+         </field>
+         <field>
+            <name>Expected Number of Insurance Plans</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>NM</composite_ref>
+         </field>
+         <field>
+            <name>Visit Publicity Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Visit Protection Indicator</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ID</composite_ref>
+         </field>
+         <field>
+            <name>Clinic Organization Name</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>XON</composite_ref>
+         </field>
+         <field>
+            <name>Patient Status Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Visit Priority Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Previous Treatment Date</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>DT</composite_ref>
+         </field>
+         <field>
+            <name>Expected Discharge Disposition</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Signature on File Date</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>DT</composite_ref>
+         </field>
+         <field>
+            <name>First Similar Illness Date</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>DT</composite_ref>
+         </field>
+         <field>
+            <name>Patient Charge Adjustment Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Recurring Service Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Billing Media Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ID</composite_ref>
+         </field>
+         <field>
+            <name>Expected Surgery Date and Time</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>TS</composite_ref>
+         </field>
+         <field>
+            <name>Military Partnership Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ID</composite_ref>
+         </field>
+         <field>
+            <name>Military Non-Availability Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ID</composite_ref>
+         </field>
+         <field>
+            <name>Newborn Baby Indicator</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ID</composite_ref>
+         </field>
+         <field>
+            <name>Baby Detained Indicator</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ID</composite_ref>
+         </field>
+         <field>
+            <name>Mode of Arrival Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Recreational Drug Use Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Admission Level of Care Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Precaution Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Patient Condition Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Living Will Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Organ Donor Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Advance Directive Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Patient Status Effective Date</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>DT</composite_ref>
+         </field>
+         <field>
+            <name>Expected LOA Return Date/Time</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>TS</composite_ref>
+         </field>
+      </segment>
+      <segment id="47">
+         <name>AL1</name>
+         <description>Patient allergy information</description>
+         <has_delimiters>True</has_delimiters>
+         <field>
+            <name>Set ID - AL1</name>
+            <max_repeats>0</max_repeats>
+            <is_required>True</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Allergen Type Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Allergen Code/Mnemonic/Description</name>
+            <max_repeats>0</max_repeats>
+            <is_required>True</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Allergy Severity Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Allergy Reaction Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Identification Date</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>DT</composite_ref>
+         </field>
+      </segment>
+      <segment id="48">
+         <name>NK1</name>
+         <description>Next of kin / associated parties</description>
+         <has_delimiters>True</has_delimiters>
+         <field>
+            <name>Set ID - NK1</name>
+            <max_repeats>0</max_repeats>
+            <is_required>True</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>SI</composite_ref>
+         </field>
+         <field>
+            <name>Name</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>XPN</composite_ref>
+         </field>
+         <field>
+            <name>Relationship</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Address</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>XAD</composite_ref>
+         </field>
+         <field>
+            <name>Phone Number</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>XTN</composite_ref>
+         </field>
+         <field>
+            <name>Business Phone Number</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>XTN</composite_ref>
+         </field>
+         <field>
+            <name>Contact Role</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Start Date</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>DT</composite_ref>
+         </field>
+         <field>
+            <name>End Date</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>DT</composite_ref>
+         </field>
+         <field>
+            <name>Next of Kin / Associated Parties Job Title</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Next of Kin / Associated Parties Job Code/Class</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>JCC</composite_ref>
+         </field>
+         <field>
+            <name>Next of Kin / Associated Parties Employee Number</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CX</composite_ref>
+         </field>
+         <field>
+            <name>Organization Name - NK1</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>XON</composite_ref>
+         </field>
+         <field>
+            <name>Marital Status</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Administrative Sex</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Date/Time Of Birth</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>TS</composite_ref>
+         </field>
+         <field>
+            <name>Living Dependency</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Ambulatory Status</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Citizenship</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Primary Language</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Living Arrangement</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Publicity Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Protection Indicator</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ID</composite_ref>
+         </field>
+         <field>
+            <name>Student Indicator</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Religion</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Mother&apos;s Maiden Name</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>XPN</composite_ref>
+         </field>
+         <field>
+            <name>Nationality</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Ethnic Group</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Contact Reason</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Contact Person&apos;s Name</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>XPN</composite_ref>
+         </field>
+         <field>
+            <name>Contact Person&apos;s Telephone Number</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>XTN</composite_ref>
+         </field>
+         <field>
+            <name>Contact Person&apos;s Address</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>XAD</composite_ref>
+         </field>
+         <field>
+            <name>Next of Kin/Associated Party&apos;s Identifiers</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CX</composite_ref>
+         </field>
+         <field>
+            <name>Job Status</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Race</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Handicap</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Contact Person Social Security Number</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+      </segment>
       <match msg="ADT">
       </match>
       <match msg="Lab">
       </match>
-      <match msg="Message1">
+      <match msg="ORM">
       </match>
       <match msg="Catchall">
       </match>
@@ -12544,7 +14383,7 @@
             </table_grammar>
          </table_grammar>
       </message>
-      <message name="Message1">
+      <message name="ORM">
          <ignore_unknown_segments>True</ignore_unknown_segments>
          <ignore_segment_order>False</ignore_segment_order>
          <in_equation><![CDATA[]]></in_equation>
@@ -12565,8 +14404,291 @@
                <type>segment</type>
                <segment_ref>1</segment_ref>
             </message_grammar>
+            <message_grammar id="2">
+               <name>NTE</name>
+               <is_optional>True</is_optional>
+               <is_repeating>True</is_repeating>
+               <ignore_segment_order>False</ignore_segment_order>
+               <max_repeats>0</max_repeats>
+               <type>segment</type>
+               <segment_ref>26</segment_ref>
+            </message_grammar>
+            <message_grammar id="3">
+               <name>Group1</name>
+               <is_optional>True</is_optional>
+               <is_repeating>False</is_repeating>
+               <ignore_segment_order>False</ignore_segment_order>
+               <max_repeats>0</max_repeats>
+               <type>group</type>
+               <message_grammar id="4">
+                  <name>PID</name>
+                  <is_optional>False</is_optional>
+                  <is_repeating>False</is_repeating>
+                  <ignore_segment_order>False</ignore_segment_order>
+                  <max_repeats>0</max_repeats>
+                  <type>segment</type>
+                  <segment_ref>43</segment_ref>
+               </message_grammar>
+               <message_grammar id="5">
+                  <name>PD1</name>
+                  <is_optional>True</is_optional>
+                  <is_repeating>False</is_repeating>
+                  <ignore_segment_order>False</ignore_segment_order>
+                  <max_repeats>0</max_repeats>
+                  <type>segment</type>
+                  <segment_ref>44</segment_ref>
+               </message_grammar>
+               <message_grammar id="6">
+                  <name>NTE</name>
+                  <is_optional>True</is_optional>
+                  <is_repeating>True</is_repeating>
+                  <ignore_segment_order>False</ignore_segment_order>
+                  <max_repeats>0</max_repeats>
+                  <type>segment</type>
+                  <segment_ref>26</segment_ref>
+               </message_grammar>
+               <message_grammar id="7">
+                  <name>Group2</name>
+                  <is_optional>True</is_optional>
+                  <is_repeating>False</is_repeating>
+                  <ignore_segment_order>False</ignore_segment_order>
+                  <max_repeats>0</max_repeats>
+                  <type>group</type>
+                  <message_grammar id="8">
+                     <name>PV1</name>
+                     <is_optional>False</is_optional>
+                     <is_repeating>False</is_repeating>
+                     <ignore_segment_order>False</ignore_segment_order>
+                     <max_repeats>0</max_repeats>
+                     <type>segment</type>
+                     <segment_ref>45</segment_ref>
+                  </message_grammar>
+                  <message_grammar id="9">
+                     <name>PV2</name>
+                     <is_optional>True</is_optional>
+                     <is_repeating>False</is_repeating>
+                     <ignore_segment_order>False</ignore_segment_order>
+                     <max_repeats>0</max_repeats>
+                     <type>segment</type>
+                     <segment_ref>46</segment_ref>
+                  </message_grammar>
+               </message_grammar>
+               <message_grammar id="10">
+                  <name>Group3</name>
+                  <is_optional>True</is_optional>
+                  <is_repeating>True</is_repeating>
+                  <ignore_segment_order>False</ignore_segment_order>
+                  <max_repeats>0</max_repeats>
+                  <type>group</type>
+                  <message_grammar id="11">
+                     <name>IN1</name>
+                     <is_optional>False</is_optional>
+                     <is_repeating>False</is_repeating>
+                     <ignore_segment_order>False</ignore_segment_order>
+                     <max_repeats>0</max_repeats>
+                     <type>segment</type>
+                     <segment_ref>19</segment_ref>
+                  </message_grammar>
+                  <message_grammar id="12">
+                     <name>IN2</name>
+                     <is_optional>True</is_optional>
+                     <is_repeating>False</is_repeating>
+                     <ignore_segment_order>False</ignore_segment_order>
+                     <max_repeats>0</max_repeats>
+                     <type>segment</type>
+                     <segment_ref>20</segment_ref>
+                  </message_grammar>
+                  <message_grammar id="13">
+                     <name>IN3</name>
+                     <is_optional>True</is_optional>
+                     <is_repeating>False</is_repeating>
+                     <ignore_segment_order>False</ignore_segment_order>
+                     <max_repeats>0</max_repeats>
+                     <type>segment</type>
+                     <segment_ref>21</segment_ref>
+                  </message_grammar>
+               </message_grammar>
+               <message_grammar id="14">
+                  <name>GT1</name>
+                  <is_optional>True</is_optional>
+                  <is_repeating>False</is_repeating>
+                  <ignore_segment_order>False</ignore_segment_order>
+                  <max_repeats>0</max_repeats>
+                  <type>segment</type>
+                  <segment_ref>18</segment_ref>
+               </message_grammar>
+               <message_grammar id="15">
+                  <name>AL1</name>
+                  <is_optional>True</is_optional>
+                  <is_repeating>True</is_repeating>
+                  <ignore_segment_order>False</ignore_segment_order>
+                  <max_repeats>0</max_repeats>
+                  <type>segment</type>
+                  <segment_ref>47</segment_ref>
+               </message_grammar>
+            </message_grammar>
+            <message_grammar id="16">
+               <name>Group4</name>
+               <is_optional>False</is_optional>
+               <is_repeating>True</is_repeating>
+               <ignore_segment_order>False</ignore_segment_order>
+               <max_repeats>0</max_repeats>
+               <type>group</type>
+               <message_grammar id="17">
+                  <name>ORC</name>
+                  <is_optional>False</is_optional>
+                  <is_repeating>False</is_repeating>
+                  <ignore_segment_order>False</ignore_segment_order>
+                  <max_repeats>0</max_repeats>
+                  <type>segment</type>
+                  <segment_ref>27</segment_ref>
+               </message_grammar>
+               <message_grammar id="18">
+                  <name>OBR</name>
+                  <is_optional>False</is_optional>
+                  <is_repeating>False</is_repeating>
+                  <ignore_segment_order>False</ignore_segment_order>
+                  <max_repeats>0</max_repeats>
+                  <type>segment</type>
+                  <segment_ref>28</segment_ref>
+               </message_grammar>
+               <message_grammar id="19">
+                  <name>Group5</name>
+                  <is_optional>True</is_optional>
+                  <is_repeating>False</is_repeating>
+                  <ignore_segment_order>False</ignore_segment_order>
+                  <max_repeats>0</max_repeats>
+                  <type>group</type>
+                  <message_grammar id="20">
+                     <name>RQ1</name>
+                     <is_optional>False</is_optional>
+                     <is_repeating>False</is_repeating>
+                     <ignore_segment_order>False</ignore_segment_order>
+                     <max_repeats>0</max_repeats>
+                     <type>segment</type>
+                     <segment_ref>30</segment_ref>
+                  </message_grammar>
+                  <message_grammar id="21">
+                     <name>RXO</name>
+                     <is_optional>False</is_optional>
+                     <is_repeating>False</is_repeating>
+                     <ignore_segment_order>False</ignore_segment_order>
+                     <max_repeats>0</max_repeats>
+                     <type>segment</type>
+                     <segment_ref>31</segment_ref>
+                  </message_grammar>
+                  <message_grammar id="22">
+                     <name>NTE</name>
+                     <is_optional>True</is_optional>
+                     <is_repeating>True</is_repeating>
+                     <ignore_segment_order>False</ignore_segment_order>
+                     <max_repeats>0</max_repeats>
+                     <type>segment</type>
+                     <segment_ref>26</segment_ref>
+                  </message_grammar>
+                  <message_grammar id="23">
+                     <name>CTD</name>
+                     <is_optional>True</is_optional>
+                     <is_repeating>False</is_repeating>
+                     <ignore_segment_order>False</ignore_segment_order>
+                     <max_repeats>0</max_repeats>
+                     <type>segment</type>
+                     <segment_ref>34</segment_ref>
+                  </message_grammar>
+                  <message_grammar id="24">
+                     <name>DG1</name>
+                     <is_optional>True</is_optional>
+                     <is_repeating>True</is_repeating>
+                     <ignore_segment_order>False</ignore_segment_order>
+                     <max_repeats>0</max_repeats>
+                     <type>segment</type>
+                     <segment_ref>15</segment_ref>
+                  </message_grammar>
+                  <message_grammar id="25">
+                     <name>Group6</name>
+                     <is_optional>True</is_optional>
+                     <is_repeating>True</is_repeating>
+                     <ignore_segment_order>False</ignore_segment_order>
+                     <max_repeats>0</max_repeats>
+                     <type>group</type>
+                     <message_grammar id="26">
+                        <name>OBX</name>
+                        <is_optional>False</is_optional>
+                        <is_repeating>False</is_repeating>
+                        <ignore_segment_order>False</ignore_segment_order>
+                        <max_repeats>0</max_repeats>
+                        <type>segment</type>
+                        <segment_ref>13</segment_ref>
+                     </message_grammar>
+                     <message_grammar id="27">
+                        <name>NTE</name>
+                        <is_optional>True</is_optional>
+                        <is_repeating>True</is_repeating>
+                        <ignore_segment_order>False</ignore_segment_order>
+                        <max_repeats>0</max_repeats>
+                        <type>segment</type>
+                        <segment_ref>26</segment_ref>
+                     </message_grammar>
+                  </message_grammar>
+               </message_grammar>
+               <message_grammar id="28">
+                  <name>FT1</name>
+                  <is_optional>True</is_optional>
+                  <is_repeating>True</is_repeating>
+                  <ignore_segment_order>False</ignore_segment_order>
+                  <max_repeats>0</max_repeats>
+                  <type>segment</type>
+                  <segment_ref>35</segment_ref>
+               </message_grammar>
+               <message_grammar id="29">
+                  <name>CTI</name>
+                  <is_optional>True</is_optional>
+                  <is_repeating>True</is_repeating>
+                  <ignore_segment_order>False</ignore_segment_order>
+                  <max_repeats>0</max_repeats>
+                  <type>segment</type>
+                  <segment_ref>36</segment_ref>
+               </message_grammar>
+               <message_grammar id="30">
+                  <name>BLG</name>
+                  <is_optional>True</is_optional>
+                  <is_repeating>False</is_repeating>
+                  <ignore_segment_order>False</ignore_segment_order>
+                  <max_repeats>0</max_repeats>
+                  <type>segment</type>
+                  <segment_ref>37</segment_ref>
+               </message_grammar>
+            </message_grammar>
          </message_grammar>
-         <table_grammar name="Message1">
+         <identifier>
+            <segment_ref>MSH</segment_ref>
+            <value>ORM</value>
+            <node_address>
+               <pair>
+                  <node_index>8</node_index>
+                  <repeat_index>0</repeat_index>
+               </pair>
+               <pair>
+                  <node_index>0</node_index>
+                  <repeat_index>0</repeat_index>
+               </pair>
+            </node_address>
+         </identifier>
+         <identifier>
+            <segment_ref>MSH</segment_ref>
+            <value>O01</value>
+            <node_address>
+               <pair>
+                  <node_index>8</node_index>
+                  <repeat_index>0</repeat_index>
+               </pair>
+               <pair>
+                  <node_index>1</node_index>
+                  <repeat_index>0</repeat_index>
+               </pair>
+            </node_address>
+         </identifier>
+         <table_grammar name="ORM">
             <type>group</type>
             <grammar_field_index>-1</grammar_field_index>
             <grammar_root_ref>0</grammar_root_ref>

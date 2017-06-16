@@ -7,8 +7,8 @@
    use_message_filter="true">
    <to_mapper
       guid="F48BD689AF3DF64C896247663215D0AE"
-      commit_id="1919488cb1c54c76266614c829cc1ee891999f50"
-      commit_comment="Add query search">
+      commit_id="186c3fdbb48d0a22112ef1d1bfa1a2adee83c3ef"
+      commit_comment="Update to support Angelwin ORM">
       <dequeue_list>
          <dequeue
             source_name="self"
@@ -30,7 +30,7 @@
       error_handling="0"
       use_translator_filter="true"
       translator_guid="3EBD411EC0CC8FF51BB17AD1F3B7D1CA"
-      translator_commit_id="049114ae558320f37122f3803314e6ff3f35913b"
-      translator_commit_comment="Import Translators: asdsa">
+      translator_commit_id="186c3fdbb48d0a22112ef1d1bfa1a2adee83c3ef"
+      translator_commit_comment="Update to support Angelwin ORM">
    </message_filter>
 </channel>
